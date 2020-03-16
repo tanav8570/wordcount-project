@@ -1,0 +1,10 @@
+<h2> Total Number of words in the text : {{words_count}} </h2>
+<a href="{% url 'home' %}"> Start again! </a>
+<h2>User text:</h2>
+<body>{{usertext}}</body>
+<h2> Here is the count of each word in the text: </h2>
+{%for key,val in words.items %}
+<body>{{key}} : {{val}}</body>
+<br/>
+{%endfor%}
+<br/>
